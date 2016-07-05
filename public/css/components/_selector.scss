@@ -1,0 +1,424 @@
+product-selector {
+	width: 80%;
+	position: relative;
+        -webkit-transition: all 1s;
+    transition: all 1s;
+
+    h2{
+        font-size: 3em;
+        text-align: center;
+        font-weight: 800;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        @media screen and (max-width: 1366px) {
+            font-size: 2em;
+            margin-top: 35px;
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            margin-bottom: 0px;
+        }
+    }
+    
+   #french-door, #side-by-side, #bottom-freezer, #under-counter, #built-in{
+        opacity: 0;
+    }
+    
+    product-slides {
+        display: inline-block;
+        width: 100%;
+                -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+    .wp-cooking-landing-product-slide{
+        position: relative;
+    }
+    product-slide {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 20px;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+
+        #freezers img {
+            margin-left: -50px;
+
+            @media screen and (max-width: $mobileBreakpoint) {
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            width: 100%;
+        }
+    }
+    product-slide:not(.selected) {
+        display: none;
+    }
+
+    @media screen and (max-width: $mobileBreakpoint) {
+        product-slide:first-of-type {
+            position: relative;
+        }
+    }
+
+    > .row{
+        background-image: url('../../public/images/refer-select-shadow.png');
+        background-repeat: no-repeat;
+        background-position-y: 100px;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            background-position-y: -30px;
+        }
+    }
+
+    .rl-wp-lndng-prodLeft {
+        width: 50%;
+        position: relative;
+        float: left;
+        text-align: right;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            float: none;
+            width: 100%
+        }
+    }
+
+    .rl-wp-lndng-prodRight {
+        width: 35%;
+        position: relative;
+        float: left;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            float: none;
+            width: 100%
+        }
+    }
+
+    .rl-wp-lndng-side{
+        display: none;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            width: 100%;
+        }
+    }
+    
+    .rl-wp-lndng-fridge-title.mobile {
+        display: none;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            @include mobile-block-element;
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #000000!important;
+            width: 100%;
+        }
+    }
+
+    .rl-wp-lndng-fridge-title{
+        position: relative;
+        font-weight: 300;
+        font-size: 32px;
+        color: #000000!important;
+        opacity: 0;
+        line-height: 30px;
+        text-align: left;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            display: none;
+        }
+    }
+    
+    learn-more-button{
+        position: relative;
+        width: 115px;
+        height: 30px;
+        opacity: 0;
+
+        @media screen and (max-width: 1366px) {
+           transform: scale(1,1);
+           -webkit-transform: scale(1,1);
+           font-size: .7em;
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            @include mobile-block-element;
+        }
+    }
+    
+    .rl-wp-lndng-fridge{
+        position: relative;
+        opacity: 0;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            left: initial;
+            position: relative;
+            display: block;
+            top: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+    
+    .rl-wp-lndng-fridge img{
+        width: 350px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            height: 200px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            width: initial;
+
+        }
+    }
+    
+    .rl-wp-lndng-fridge-desc{
+        position: relative;
+        font-size: 18.5px;
+        font-weight: 100;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-rendering: optimizeSpeed;
+        opacity: 0;
+        text-align: left;
+        padding-bottom: 20px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            @include mobile-block-element;
+            font-size: 14px !important;
+            line-height: 18px !important;
+        }
+
+        @media screen and (max-width: 1366px) {
+           font-size: 18px;
+           line-height: 24px;
+        }
+    }
+    
+}
+
+product-selector-nav {
+    position: relative;
+    display: inline-block;
+    padding-top: 4%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+
+    .row {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .wp-cooking-landing-product,.see-all {
+        float: left;
+        width: 25%;
+        padding: 0 12px;
+        
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .wp-cooking-landing-product{
+        > img {
+            @include transition(0.2s);
+        }
+    }
+
+    .wp-cooking-landing-product:not(.selected) {
+        > img {
+            opacity: 0.6;
+        }
+
+        .wp-cooking-landing-button {
+            color: $selectorTextColor;
+        }
+    }
+
+    .wp-cooking-landing-button {
+        margin-top: 10px;
+        height: 70px;
+        display: table;
+        color: $selectorTextColor;
+        width: 100%;
+        @include transition(0.2s);
+
+        .wp-cooking-landing-button-circle {
+            width: 100%;
+            height: 15px;
+            margin-bottom: 6px;
+
+            div {
+                height: inherit;
+                width: 15px;
+                margin: 0 auto;
+                display: block;
+                background-color: $selectorTextColor;
+                border-radius: 10px;
+            }
+        }
+
+        p {
+            width: 100%;
+            font-size: 1em;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            min-height: 10.5%;
+
+            p {
+                font-size: 0.9em;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .wp-cooking-landing-product:hover {
+        > img {
+            opacity: 0.75;
+        }
+
+        .wp-cooking-landing-button {
+            color: $selectorHighlightedTextColor !important;
+        }
+
+        .wp-cooking-landing-button-circle div {
+            background-color: $selectorHighlightedTextColor !important;
+        }
+    }
+
+    .wp-cooking-landing-product.selected {
+        .wp-cooking-landing-button {
+            color: $selectorHighlightedTextColor;
+        }
+
+        .wp-cooking-landing-button-circle div {
+            background-color: $selectorHighlightedTextColor;
+        }
+    }
+
+    .see-all {
+        display:none !important;
+        height: 300px;
+        width: 25%;
+        color: $selectorCTAColor;
+        text-transform: uppercase;
+        display: table;
+        padding: 0;
+        @include transition(0.2s);
+
+        div {
+            display: table;
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+            border-radius: 130px;
+            margin: 0 auto;
+            margin-top: 58%;
+            font-weight: 400;
+        }
+
+        p {
+            @include centered-table-cell;
+            text-align: center;
+            font-size: 1.3em;
+            line-height: 20px;
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            height: 130px;
+            margin-top: 70px;
+            padding: initial;
+
+            div {
+                margin-top: initial;
+                margin: 0 auto;
+                width: 60px;
+                height: 60px;
+            }
+
+            p {
+                font-size: 1em;
+                line-height: 15px;
+            }
+        }
+    }
+}
+
+product-selector.fr {
+    .rl-wp-lndng-fridge-title {
+        width: 450px;
+    }
+
+    .rl-wp-lndng-fridge-title.mobile {
+        @media screen and (max-width: $mobileBreakpoint) {
+            width: 100%;
+        }
+    }
+
+    .rl-wp-lndng-fridge-desc {
+        width: 450px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            width: 100%;
+            padding: 0 10px 13px 10px;
+        }
+    }
+
+    product-selector-nav {
+        .wp-cooking-landing-product:nth-child(4) {
+            margin-bottom: 8px;
+        }
+
+        @media screen and (max-width: $mobileBreakpoint) {
+            div .wp-cooking-landing-button p {
+                font-size: 0.6em;
+                font-weight: 200;
+                line-height: 11px;
+            }
+        }
+    }
+
+    product-slides {
+        product-slide {
+            .rl-wp-lndng-fridge-title.mobile {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    learn-more-button{
+        width: 135px;
+    }
+}
+
+.product-slide-background {
+    width: 100%;
+    height: 130px;
+    background: url(../images/refer-select-shadow.png);
+    position: absolute;
+    background-position: 0 -280px;
+    top: 310px;
+    left: -90px;
+    opacity: 0.5;
+
+    @media screen and (max-width: $mobileBreakpoint) {
+        left: 0;
+    }
+}

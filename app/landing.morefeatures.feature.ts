@@ -25,7 +25,7 @@ declare var $: JQueryStatic;
 				<div class="hover">
 					<div *ngIf="text" class="text-container">
 						<div class="text-container-cell">
-							<p class="text">{{text}}</p>
+							<p class="text" [innerHTML]="text"></p>
 							<p class="cta" *ngIf="cta">{{cta}}</p>
 						</div>
 					</div>

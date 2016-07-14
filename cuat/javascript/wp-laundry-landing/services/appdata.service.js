@@ -76,25 +76,25 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                             title: "Additional Features",
                             features: [
                                 {
-                                    title: "Load & Go<sup>&trade;</sup> Bulk Dispenser",
-                                    image: "/images/wp-laundry-landing/more-features-1.jpg",
-                                    link: "http://www.whirlpool.com/duet",
+                                    title: "Vibration Control Guarantee",
+                                    image: "/images/wp-laundry-landing/more-features-2.jpg",
+                                    link: "#",
                                     alt: "test",
                                     text: "",
                                     cta: ""
                                 },
                                 {
-                                    title: "Vibration Control Guarantee",
-                                    image: "/images/wp-laundry-landing/more-features-2.jpg",
-                                    link: "http://www.whirlpool.ca/other-assets/en_CA/pdf/2016_Whirlpool_VIBRATION_FREE_LIMITED_GUARANTEE_EN.pdf",
+                                    title: "Load & Go<sup>&trade;</sup> Bulk Dispenser",
+                                    image: "/images/wp-laundry-landing/more-features-1.jpg",
+                                    link: "",
                                     alt: "test",
-                                    text: "",
+                                    text: "Care is making things easier. Skip adding detergent to every load with the Load & Go<sup>&trade;</sup> system’s cartridge that holds enough detergent for up to 12 loads of laundry.",
                                     cta: ""
                                 },
                                 {
                                     title: "Additional Accessories",
                                     image: "/images/wp-laundry-landing/more-features-3.jpg",
-                                    link: "http://www.whirlpool.ca/en_CA/Accessories-1/Accessories_Laundry_Accessories-2/102280132/ ",
+                                    link: "http://www.whirlpool.ca/fr_CA/Accessories-1/Accessories_Laundry_Accessories-2/102280132/",
                                     alt: "test",
                                     text: "",
                                     cta: ""
@@ -158,7 +158,7 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     title: "High-Efficiency Front Load",
                                     alt: "High-Efficiency Front Load",
                                     desc: "Front load machines have gained popularity due to their water and energy efficiency, also offering space saving flexibility and contemporary design. This configuration boasts unique features such as Load&Go™, or combined Wash & Dry cycles, making laundry a breeze. Clothes will get the fabric care they deserve with this energy-efficient front load washer.",
-                                    link: "http://www.whirlpool.ca/en_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966825/",
+                                    link: "http://www.whirlpool.ca/en_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966847+4294966878/",
                                     id: "front-load",
                                     ctaText: "Learn More"
                                 },
@@ -178,7 +178,7 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     title: "Ventless Dryer Technology",
                                     alt: "Ventless Dryer Technology",
                                     desc: "Our most efficient dryer technology allows you to enjoy exceptional care for clothes while using less energy than ever. The space-saving design and ventless technology also allow it to be installed just about anywhere.",
-                                    link: "http://www.whirlpool.ca/en_CA/-[YWED99HEDC]-1305267/YWED99HEDC/",
+                                    link: "http://www.whirlpool.ca/en_CA/laundry-1/laundry-2/dryers-3/-[YWED9290FW]-5733097/YWED9290FW/",
                                     id: "dryer",
                                     ctaText: "Learn More"
                                 }
@@ -188,7 +188,7 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                     this.contents.fr = {
                         masthead: {
                             enabled: true,
-                            image: "/images/wp-laundry-landing/refer-landing-masthead-fr.jpg",
+                            image: "/images/wp-laundry-landing/refer-landing-masthead.jpg",
                             alt: "test",
                             title: ""
                         },
@@ -196,34 +196,34 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                             enabled: true,
                             link: 'http://www.whirlpool.ca/fr_CA/everydaycare/',
                             image: '/images/wp-laundry-landing/banner_fr.jpg',
-                            ctaText: 'En savoir plus'
+                            ctaText: 'Plus de détails'
                         },
                         features: {
                             enabled: true,
                             features: [
                                 {
                                     image: "/images/wp-laundry-landing/refer-landing-shopping-cart.png",
-                                    title: "Guide D'achat",
-                                    desc: "Éléments à considérer lorsque vous magasinez",
-                                    alt: "test",
+                                    title: "Guide d'achat",
+                                    alt: "Guide d'achat",
+                                    desc: "Caractéristiques à rechercher",
                                     cta: "Cliquez ici",
-                                    link: "/other-assets/fr_CA/pdf/WP_Cooking_Buying_Guide_FR.pdf",
+                                    link: "http://blog.whirlpool.ca/look-buying-range/",
                                     type: "cart"
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/refer-landing-star.png",
-                                    title: "Classements et Évaluations",
+                                    title: "Évaluations et commentaires",
+                                    alt: "Évaluations et commentaires",
                                     desc: "Voyez ce que les autres clients en disent",
-                                    alt: "test",
                                     cta: "Cliquez ici",
-                                    link: "http://www.whirlpool.ca/fr_CA/2_3_90/jump-pages_best-products.content.html#Ovens",
+                                    link: "http://www.whirlpool.ca/fr_CA/2_3_90/jump-pages_best-products.content.html#Laundry",
                                     type: "star"
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/refer-landing-mag-glass.png",
-                                    title: "Trouvez Votre Électroménager Whirlpool",
-                                    desc: "Vous avez besoin d’aide pour trouver une cuisinière?",
-                                    alt: "test",
+                                    title: "Trouvez votre électroménager Whirlpool",
+                                    alt: "Trouvez votre électroménager Whirlpool",
+                                    desc: "Vous avez besoin d'aide pour trouver votre duo de lessive?",
                                     cta: "Cliquez ici",
                                     link: "http://trouvermon.whirlpool.ca",
                                     type: "magnifier"
@@ -232,28 +232,28 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                         },
                         morefeatures: {
                             enabled: true,
-                            title: "Fonctions supplémentaires",
+                            title: "Caractéristiques additionnelles",
                             features: [
                                 {
-                                    title: "Élément FlexHeat<sup>&trade;</sup>",
+                                    title: "Garantie de contrôle des vibrations",
+                                    image: "/images/wp-laundry-landing/more-features-2.jpg",
+                                    link: "http://www.whirlpool.ca/other-assets/en_CA/pdf/2016_Whirlpool_VIBRATION_FREE_LIMITED_GUARANTEE_FR.pdf",
+                                    alt: "test",
+                                    text: "",
+                                    cta: ""
+                                },
+                                {
+                                    title: "Distributeur de détergent Load & Go<sup>&trade;</sup>",
                                     image: "/images/wp-laundry-landing/more-features-1.jpg",
                                     link: "",
-                                    alt: "Élément Flex Heat",
-                                    text: "L'élément FlexHeat™ permet d'avoir deux ou trois éléments en un seul. L’anneau intérieur de 6 po est idéal pour les petites casseroles et les anneaux extérieurs permettent d'accueillir de plus grandes batteries de cuisine.",
+                                    alt: "test",
+                                    text: "Plus besoin d'ajouter du détergent à chaque brassée grâce au système de remplissage Load & Go<sup>&trade;</sup> . La cartouche Load & Go<sup>&trade;</sup> peut contenir suffisamment de détergent pour laver jusqu'à 12 brassées* de vêtements.",
                                     cta: ""
                                 },
                                 {
-                                    title: "Capteur de température",
-                                    image: "/images/wp-laundry-landing/more-features-2.jpg",
-                                    link: "",
-                                    alt: "Capteur de température",
-                                    text: "Un capteur intégré surveille la température du four et contrôle les éléments de cuisson pour assurer des résultats uniformes et délicieux à chaque fois.",
-                                    cta: ""
-                                },
-                                {
-                                    title: "Garantie d’installation FIT",
+                                    title: "Accessoires Additionnels",
                                     image: "/images/wp-laundry-landing/more-features-3.jpg",
-                                    link: "/other-assets/fr_CA/WHR_FIT_Front Control_Guarantee_2016_FR.pdf",
+                                    link: "http://www.whirlpool.ca/fr_CA/Accessories-1/Accessories_Laundry_Accessories-2/102280132/",
                                     alt: "test",
                                     text: "",
                                     cta: ""
@@ -267,29 +267,29 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                 {
                                     image: '/images/wp-laundry-landing/video-thumb-1.jpg',
                                     thumb: '/images/wp-laundry-landing/video-select-1.jpg',
-                                    title: 'Cuisinières électriques et au gaz ',
-                                    alt: "Cuisinières électriques et au gaz ",
-                                    ctaTitle: 'Cuisinières électriques et au gaz',
+                                    title: 'Le soin des tissus le plus personnalisé de l\'industrie*',
+                                    alt: "Le soin des tissus le plus personnalisé de l\'industrie*",
+                                    ctaTitle: 'Le soin des tissus le plus personnalisé de l\'industrie*',
                                     cta: 'Voir',
-                                    desc: 'Préparez votre souper plus rapidement et regagnez ainsi du temps dans votre journée bien occupée, grâce aux cuisinières équipées du système TimeSavor<sup>&trade;</sup>.'
+                                    desc: 'Personnalisez le soin de vos tissus avec le système de commandes intuitives à effleurement avec mémoire QuickSelect<sup>&trade;</sup>.'
                                 },
                                 {
                                     image: '/images/wp-laundry-landing/video-thumb-2.jpg',
                                     thumb: '/images/wp-laundry-landing/video-select-2.jpg',
-                                    title: 'Technologie Frozen Bake<sup>&trade;</sup>',
-                                    alt: "Technologie Frozen Bake",
-                                    ctaTitle: 'Technologie<br/>Frozen Bake<sup>&trade;</sup>',
+                                    title: 'Technologie de lavage adaptatif',
+                                    alt: "Technologie de lavage adaptatif",
+                                    ctaTitle: 'Technologie de lavage adaptatif',
                                     cta: 'Voir',
-                                    desc: 'La technologie Frozen Bake™ cuit les aliments plus rapidement, éliminant le besoin de préchauffer le four pour vos aliments favoris, tels que les pizzas, lasagnes, pépites de poulet, frites ou tartes. Il suffit de sélectionner le type d\'aliment, la température et le temps de cuisson indiqué sur l\'emballage du produit congelé, puis le four personnalisera la cuisson.',
+                                    desc: 'Obtenez un meilleur nettoyage et un meilleur soin des vêtements grâce à la technologie de lavage adaptatif, qui est partie intégrante du système d\'entretien complet des vêtements. Maintenant dotée de l\'action de lavage Active BloomTM; cette technologie évalue chaque brassée et adapte les mouvements de lavage et les niveaux d\'eau en conséquence, procurant un nettoyage personnalisé.',
                                 },
                                 {
                                     image: '/images/wp-laundry-landing/video-thumb-3.jpg',
                                     thumb: '/images/wp-laundry-landing/video-select-3.jpg',
-                                    title: 'Cuisson par convection à ventilation',
-                                    alt: "Cuisson par convection à ventilation",
-                                    ctaTitle: 'Cuisson par convection à ventilation',
+                                    title: 'Lavage et séchage en un seul programme',
+                                    alt: "Lavage et séchage en un seul programme",
+                                    ctaTitle: 'Lavage et séchage en un seul programme',
                                     cta: 'Voir',
-                                    desc: 'Obtenez une cuisson uniforme sur toutes les grilles grâce à la convection par ventilateur. La chaleur se propage dans tout le four, vous obtiendrez ainsi des résultats optimaux, quelle que soit la grille utilisée.'
+                                    desc: 'Maintenant vous pouvez laver et sécher votre tenue du lendemain directement dans la laveuse grâce au programme de lavage et de séchage All-In-One Care<sup>&trade;</sup>.'
                                 }
                             ]
                         },
@@ -298,78 +298,48 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                             title: 'Choisissez votre style',
                             nav: {
                                 text: 'Tout<br/>Voir',
-                                link: 'http://www.whirlpool.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102280003/'
+                                link: 'http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966847+102280319+102280316+102280317/'
                             },
                             products: [
                                 {
-                                    image: "/images/wp-laundry-landing/products/fcr.png",
-                                    thumb: "/images/wp-laundry-landing/products/thumbs/fcr.png",
-                                    title: "Cuisinières à commandes frontales",
-                                    alt: "Cuisinières à commandes frontales",
-                                    desc: "Les commandes frontales sont plus sécuritaires et faciles d'accès, et leur allure intégrée s'agence à toute cuisine. Vous pouvez installer ces cuisinières au bout du comptoir, grâce aux parois finies.",
-                                    link: "http://www.whirlpool.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102280003+100000374/",
-                                    id: "front-control-ranges",
-                                    ctaText: "En savoir plus"
+                                    image: "/images/wp-laundry-landing/products/top-load.jpg",
+                                    thumb: "/images/wp-laundry-landing/products/top-load-sml.jpg",
+                                    title: "Modèles haute efficacité à chargement vertical",
+                                    alt: "Modèles haute efficacité à chargement vertical",
+                                    desc: "Vous recherchez un nettoyage optimal, une efficacité énergétique et une élégance épurée? Ce n'est que le début. Ce style de laveuse traditionnel à chargement vertical a considérablement évolué au cours des dernières années, pour en faire la configuration de lessive la plus populaire sur le marché d'aujourd'hui. Des fonctions perfectionnées et une nouvelle technologie procurent aux vêtements un nettoyage en profondeur et un soin délicat. Grâce à des paniers et tambours à la plus grande capacité, ces appareils vous permettent d'effectuer davantage de lessive, plus rapidement.",
+                                    link: "http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+102280317/",
+                                    id: "top-load",
+                                    ctaText: "Plus de détails"
                                 },
                                 {
-                                    image: "/images/wp-laundry-landing/products/rcr.png",
-                                    thumb: "/images/wp-laundry-landing/products/thumbs/rcr.png",
-                                    title: "Cuisinières à commandes arrière",
-                                    alt: "Cuisinières à commandes arrière",
-                                    desc: "Ces cuisinières peuvent se placer entre les placards/comptoirs, au bout d'un comptoir ou même séparément; et les commandes sont placées sur le panneau arrière. Les prix varient, du modèle de base au modèle supérieur.",
-                                    link: "http://www.whirlpool.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102280003+4294965600/",
-                                    id: "rear-control-ranges",
-                                    ctaText: "En savoir plus"
+                                    image: "/images/wp-laundry-landing/products/front-load.jpg",
+                                    thumb: "/images/wp-laundry-landing/products/front-load-sml.jpg",
+                                    title: "Modèles haute efficacité à chargement frontal",
+                                    alt: "Modèles haute efficacité à chargement frontal",
+                                    desc: "Les appareils de lessive à chargement frontal ont gagné en popularité en raison de leur efficacité éconergétique, et de leur polyvalence d'installation et style contemporain. La cartouche Load&Go™, ou le programme de lavage et séchage combinés de cette configuration facilite la lessive.  Les vêtements reçoivent le soin qu'ils méritent grâce à cette laveuse à chargement frontal à haute efficacité.",
+                                    link: "http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+102280316/",
+                                    id: "front-load",
+                                    ctaText: "Plus de détails"
                                 },
                                 {
-                                    image: "/images/wp-laundry-landing/products/dor.png",
-                                    thumb: "/images/wp-laundry-landing/products/thumbs/dor.png",
-                                    title: "Cuisinières à four double",
-                                    alt: "Cuisinières à four double",
-                                    desc: "Les fours doubles sont de tailles et formes variées. Réfléchissez à ce que vous cuisinez le plus fréquemment et pour combien de personnes. Les deux fours permettent de cuire vos pâtisseries et le souper en même temps.",
-                                    link: "http://www.whirlpool.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102280003+102280334/",
-                                    id: "double-oven-ranges",
-                                    ctaText: "En savoir plus"
+                                    image: "/images/wp-laundry-landing/products/stacked.jpg",
+                                    thumb: "/images/wp-laundry-landing/products/stacked-sml.jpg",
+                                    title: "Solutions pour les petits espaces",
+                                    alt: "Solutions pour les petits espaces",
+                                    desc: "Bénéficiez d'une conception qui économise de l'espace et s'ajuste à la profondeur de placard5 pour une installation polyvalente dans votre espace de lessive.",
+                                    link: "http://www.whirlpool.ca/fr_CA/-[WFW9290FC]-5709597/WFW9290FC/",
+                                    id: "stacked",
+                                    ctaText: "Plus de détails"
                                 },
                                 {
-                                    image: "/images/wp-laundry-landing/products/wall-oven.png",
-                                    thumb: "/images/wp-laundry-landing/products/thumbs/wall-oven.png",
-                                    title: "Fours muraux",
-                                    alt: "Fours muraux",
-                                    desc: "Les fours muraux encastrés sont très polyvalents. Situés à hauteur de poitrine, les plats lourds sont faciles à transférer sur le comptoir. Choix variés : four à micro-ondes encastré, four mural simple, double, ou combiné avec un four à micro-ondes.",
-                                    link: "http://www.whirlpool.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Wall_Ovens-3/102280007/",
-                                    id: "wall-oven",
-                                    ctaText: "En savoir plus"
-                                },
-                                {
-                                    image: "/images/wp-laundry-landing/products/cooktop.png",
-                                    thumb: "/images/wp-laundry-landing/products/thumbs/cooktop.png",
-                                    title: "Tables de cuisson",
-                                    alt: "Tables de cuisson",
-                                    desc: "Cette surface de cuisson à brûleurs ou éléments peut se placer sur un comptoir existant ou séparément. Excellente technologie pour porter à ébullition, mijoter ou frire des œufs brouillés rapidement.",
-                                    link: "http://www.whirlpool.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Cooktops-3/102280011/",
-                                    id: "cooktops",
-                                    ctaText: "En savoir plus"
-                                },
-                                {
-                                    image: "/images/wp-laundry-landing/products/microwave.png",
-                                    thumb: "/images/wp-laundry-landing/products/thumbs/microwave.png",
-                                    title: "Fours à micro-ondes",
-                                    alt: "Fours à micro-ondes",
-                                    desc: "Les fours à micro-ondes à hotte intégrée s’installent au dessus de votre surface de cuisson. Certains modèles sont dotés de la cuisson à convection, utilisant des ventilateurs internes et des éléments chauffants séparés faisant circuler uniformément l'air chaud.",
-                                    link: "http://www.whirlpool.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Microwaves-3/102280018/",
-                                    id: "microwaves",
-                                    ctaText: "En savoir plus"
-                                },
-                                {
-                                    image: "/images/wp-laundry-landing/products/hood.png",
-                                    thumb: "/images/wp-laundry-landing/products/thumbs/hood.png",
-                                    title: "Hottes",
-                                    alt: "Hottes",
-                                    desc: "Les hottes de ventilation sont une façon élégante d'aérer votre cuisine. Choix de hottes sous armoire, hottes montées sur îlot et hottes murales. Certaines sont aussi dotées d'un éclairage de surface de cuisson.",
-                                    link: "http://www.whirlpool.ca/fr_CA/Kitchen-1/Kitchen_Cooking_Hoods-3/102280014/",
-                                    id: "hoods",
-                                    ctaText: "En savoir plus"
+                                    image: "/images/wp-laundry-landing/products/dryer.jpg",
+                                    thumb: "/images/wp-laundry-landing/products/dryer-sml.jpg",
+                                    title: "Technologie sans évent",
+                                    alt: "Technologie sans évent",
+                                    desc: "Notre sécheuse à technologie la plus efficace vous permet de profiter d'un soin exceptionnel de vos vêtements tout en consommant moins d'énergie. La conception compacte et sans évent permet d’installer ce modèle pratiquement partout.",
+                                    link: "http://www.whirlpool.ca/fr_CA/-[YWED99HEDC]-1305267/YWED99HEDC/",
+                                    id: "dryer",
+                                    ctaText: "Plus de détails"
                                 }
                             ]
                         }

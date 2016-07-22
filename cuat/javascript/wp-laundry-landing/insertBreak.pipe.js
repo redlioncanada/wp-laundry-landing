@@ -26,7 +26,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     var arr = str.split(' ');
                     str = '';
                     for (var i in arr) {
-                        if (Number(i) == 1)
+                        if (Number(i) == 1 || arr[i].length == 1)
                             str += arr[i] + ' ';
                         else
                             str += arr[i] + '<br/>';

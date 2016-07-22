@@ -48,7 +48,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     alt: "Buying Guide",
                                     desc: "What to look for when buying",
                                     cta: "Click Here",
-                                    link: "http://blog.whirlpool.ca/look-buying-range/",
+                                    link: "http://blog.whirlpool.ca/what-to-look-for-when-buying-a-laundry-pair/",
                                     type: "cart"
                                 },
                                 {
@@ -78,7 +78,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                 {
                                     title: "Vibration Control Guarantee",
                                     image: "./public/images/more-features-2.jpg",
-                                    link: "#",
+                                    link: "/other-assets/en_CA/pdf/2016_Whirlpool_VIBRATION_FREE_LIMITED_GUARANTEE_EN.pdf",
                                     alt: "test",
                                     text: "",
                                     cta: ""
@@ -139,7 +139,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                             title: 'Choose Your Style',
                             nav: {
                                 text: 'See<br/>All',
-                                link: 'http://www.whirlpool.ca/en_CA/Kitchen-1/Kitchen_Cooking_Ranges-3/102280003/'
+                                link: 'http://www.whirlpool.ca/en_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966825+4294966986+102280047+4294966878/'
                             },
                             products: [
                                 {
@@ -188,7 +188,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                     this.contents.fr = {
                         masthead: {
                             enabled: true,
-                            image: "./public/images/refer-landing-masthead.jpg",
+                            image: "./public/images/refer-landing-masthead-fr.jpg",
                             alt: "test",
                             title: ""
                         },
@@ -207,7 +207,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     alt: "Guide d'achat",
                                     desc: "Caractéristiques à rechercher",
                                     cta: "Cliquez ici",
-                                    link: "http://blog.whirlpool.ca/look-buying-range/",
+                                    link: "/other-assets/fr_CA/pdf/WP_Laundry_Buying_Guide_FR.pdf",
                                     type: "cart"
                                 },
                                 {
@@ -236,7 +236,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                             features: [
                                 {
                                     title: "Garantie de contrôle des vibrations",
-                                    image: "./public/images/more-features-2.jpg",
+                                    image: "./public/images/more-features-2-fr.jpg",
                                     link: "http://www.whirlpool.ca/other-assets/en_CA/pdf/2016_Whirlpool_VIBRATION_FREE_LIMITED_GUARANTEE_FR.pdf",
                                     alt: "test",
                                     text: "",
@@ -280,7 +280,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     alt: "Technologie de lavage adaptatif",
                                     ctaTitle: 'Technologie de lavage adaptatif',
                                     cta: 'Voir',
-                                    desc: 'Obtenez un meilleur nettoyage et un meilleur soin des vêtements grâce à la technologie de lavage adaptatif, qui est partie intégrante du système d\'entretien complet des vêtements. Maintenant dotée de l\'action de lavage Active BloomTM; cette technologie évalue chaque brassée et adapte les mouvements de lavage et les niveaux d\'eau en conséquence, procurant un nettoyage personnalisé.',
+                                    desc: 'Obtenez un meilleur nettoyage et un meilleur soin des vêtements grâce à la technologie de lavage adaptatif, qui est partie intégrante du système d\'entretien complet des vêtements. Maintenant dotée de l\'action de lavage Active Bloom<sup>&trade;</sup>; cette technologie évalue chaque brassée et adapte les mouvements de lavage et les niveaux d\'eau en conséquence, procurant un nettoyage personnalisé.',
                                 },
                                 {
                                     image: './public/images/video-thumb-3.jpg',
@@ -306,7 +306,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     thumb: "./public/images/products/top-load-sml.jpg",
                                     title: "Modèles haute efficacité à chargement vertical",
                                     alt: "Modèles haute efficacité à chargement vertical",
-                                    desc: "Vous recherchez un nettoyage optimal, une efficacité énergétique et une élégance épurée? Ce n'est que le début. Ce style de laveuse traditionnel à chargement vertical a considérablement évolué au cours des dernières années, pour en faire la configuration de lessive la plus populaire sur le marché d'aujourd'hui. Des fonctions perfectionnées et une nouvelle technologie procurent aux vêtements un nettoyage en profondeur et un soin délicat. Grâce à des paniers et tambours à la plus grande capacité, ces appareils vous permettent d'effectuer davantage de lessive, plus rapidement.",
+                                    desc: "Vous recherchez un nettoyage optimal, une bonne efficacité énergétique et une élégance épurée? Ce n'est que le début. Ce style de laveuse traditionnel à chargement vertical a considérablement évolué au cours des dernières années, pour en faire la configuration de lessive la plus populaire sur le marché d'aujourd'hui. Des fonctions perfectionnées et une nouvelle technologie procurent aux vêtements un nettoyage en profondeur et un soin délicat. Grâce à des paniers et tambours à la plus grande capacité, ces appareils vous permettent d'effectuer davantage de lessive, plus rapidement.",
                                     link: "http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+102280317/",
                                     id: "top-load",
                                     ctaText: "Plus de détails"
@@ -316,7 +316,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     thumb: "./public/images/products/front-load-sml.jpg",
                                     title: "Modèles haute efficacité à chargement frontal",
                                     alt: "Modèles haute efficacité à chargement frontal",
-                                    desc: "Les appareils de lessive à chargement frontal ont gagné en popularité en raison de leur efficacité éconergétique, et de leur polyvalence d'installation et style contemporain. La cartouche Load&Go™, ou le programme de lavage et séchage combinés de cette configuration facilite la lessive.  Les vêtements reçoivent le soin qu'ils méritent grâce à cette laveuse à chargement frontal à haute efficacité.",
+                                    desc: "Les appareils de lessive à chargement frontal ont gagné en popularité en raison de leur efficacité éconergétique, et de leur polyvalence d'installation et style contemporain. La cartouche Load&Go™, ou le programme de lavage et séchage combinés de cette configuration facilitent la lessive.  Les vêtements reçoivent le soin qu'ils méritent grâce à cette laveuse à chargement frontal à haute efficacité.",
                                     link: "http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+102280316/",
                                     id: "front-load",
                                     ctaText: "Plus de détails"
@@ -326,7 +326,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     thumb: "./public/images/products/stacked-sml.jpg",
                                     title: "Solutions pour les petits espaces",
                                     alt: "Solutions pour les petits espaces",
-                                    desc: "Bénéficiez d'une conception qui économise de l'espace et s'ajuste à la profondeur de placard5 pour une installation polyvalente dans votre espace de lessive.",
+                                    desc: "Bénéficiez d'une conception qui économise de l'espace et s'ajuste à la profondeur de placard pour une installation polyvalente dans votre espace de lessive.",
                                     link: "http://www.whirlpool.ca/fr_CA/-[WFW9290FC]-5709597/WFW9290FC/",
                                     id: "stacked",
                                     ctaText: "Plus de détails"
@@ -337,7 +337,7 @@ System.register(['angular2/core', './logger.service'], function(exports_1, conte
                                     title: "Technologie sans évent",
                                     alt: "Technologie sans évent",
                                     desc: "Notre sécheuse à technologie la plus efficace vous permet de profiter d'un soin exceptionnel de vos vêtements tout en consommant moins d'énergie. La conception compacte et sans évent permet d’installer ce modèle pratiquement partout.",
-                                    link: "http://www.whirlpool.ca/fr_CA/-[YWED99HEDC]-1305267/YWED99HEDC/",
+                                    link: "http://www.whirlpool.ca/fr_CA/-[YWED9290FW]-5733097/YWED9290FW/",
                                     id: "dryer",
                                     ctaText: "Plus de détails"
                                 }

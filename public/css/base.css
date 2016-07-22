@@ -995,7 +995,7 @@ rl-wp-laundry-landing {
       display: inline-block; }
     rl-wp-laundry-landing product-selector-nav .wp-cooking-landing-product, rl-wp-laundry-landing product-selector-nav .see-all {
       float: left;
-      width: 25%;
+      width: 20%;
       padding: 0 12px; }
       rl-wp-laundry-landing product-selector-nav .wp-cooking-landing-product img, rl-wp-laundry-landing product-selector-nav .see-all img {
         width: 100%; }
@@ -1051,9 +1051,7 @@ rl-wp-laundry-landing {
     rl-wp-laundry-landing product-selector-nav .wp-cooking-landing-product.selected .wp-cooking-landing-button-circle div {
       background-color: #eeb111; }
     rl-wp-laundry-landing product-selector-nav .see-all {
-      display: none !important;
-      height: 300px;
-      width: 25%;
+      width: 20%;
       color: #eeb111;
       text-transform: uppercase;
       display: table;
@@ -1069,7 +1067,7 @@ rl-wp-laundry-landing {
         border: 1px solid black;
         border-radius: 130px;
         margin: 0 auto;
-        margin-top: 58%;
+        margin-top: 25%;
         font-weight: 400; }
       rl-wp-laundry-landing product-selector-nav .see-all p {
         display: table-cell;

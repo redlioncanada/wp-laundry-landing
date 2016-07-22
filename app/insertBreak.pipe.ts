@@ -10,7 +10,7 @@ export class InsertBreakPipe {
 		str = ''
 
 		for (var i in arr) {
-			if (Number(i) == 1) str += arr[i] + ' '
+			if (Number(i) == 1 || arr[i].length == 1) str += arr[i] + ' '
 			else str += arr[i] + '<br/>'
 		}
 		return str

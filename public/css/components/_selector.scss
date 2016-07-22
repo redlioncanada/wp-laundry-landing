@@ -223,7 +223,7 @@ product-selector-nav {
     
     .wp-cooking-landing-product,.see-all {
         float: left;
-        width: 25%;
+        width: 20%;
         padding: 0 12px;
         
 
@@ -313,9 +313,7 @@ product-selector-nav {
     }
 
     .see-all {
-        display:none !important;
-        height: 300px;
-        width: 25%;
+        width: 20%;
         color: $selectorCTAColor;
         text-transform: uppercase;
         display: table;
@@ -329,7 +327,7 @@ product-selector-nav {
             border: 1px solid black;
             border-radius: 130px;
             margin: 0 auto;
-            margin-top: 58%;
+            margin-top: 25%;
             font-weight: 400;
         }
 

@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', './analytics.directive.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13,12 +13,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __param = (this && this.__param) || function (paramIndex, decorator) {
         return function (target, key) { decorator(target, key, paramIndex); }
     };
-    var core_1;
+    var core_1, analytics_directive_1;
     var FeatureButton;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (analytics_directive_1_1) {
+                analytics_directive_1 = analytics_directive_1_1;
             }],
         execute: function() {
             FeatureButton = (function () {
@@ -87,10 +90,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Input(), 
                     __metadata('design:type', Object)
                 ], FeatureButton.prototype, "btnAlt", void 0);
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], FeatureButton.prototype, "analytics", void 0);
                 FeatureButton = __decorate([
                     core_1.Component({
                         selector: 'feature-button',
-                        template: "\n        <a href=\"{{btnLink}}\">\n            <div class=\"wp-landing-feature-button\" >\n                <!-- I don't know.  I just like spacing my code with comments -->\n                <div class=\"wp-landing-feature-button-up\">\n                    <div class=\"wp-landing-feature-icon wp-landing-innerBtn\"><img class=\"{{btnType}}\" src={{btnIcon}} alt=\"{{btnAlt}}\" /></div>\n                    <div class=\"wp-landing-feature-title wp-landing-innerBtn\">{{btnTitle}}</div>\n                    <div class=\"wp-landing-feature-rule wp-landing-innerBtn\"></div>\n                    <p class=\"wp-landing-over-copy\">{{btnRollOverCopy}}</p>\n                    <p class=\"wp-landing-over-cta\">{{btnRollOverCTA}}</p>\n                </div>\n            </div>\n        </a>\n    "
+                        template: "\n        <a href=\"{{btnLink}}\" analyticsOn=\"click\" analyticsCategory=\"{{analytics.category}}\" analyticsAction=\"{{analytics.action}}\" analyticsLabel=\"{{analytics.label}}\">\n            <div class=\"wp-landing-feature-button\" >\n                <div class=\"wp-landing-feature-button-up\">\n                    <div class=\"wp-landing-feature-icon wp-landing-innerBtn\"><img class=\"{{btnType}}\" src={{btnIcon}} alt=\"{{btnAlt}}\" /></div>\n                    <div class=\"wp-landing-feature-title wp-landing-innerBtn\">{{btnTitle}}</div>\n                    <div class=\"wp-landing-feature-rule wp-landing-innerBtn\"></div>\n                    <p class=\"wp-landing-over-copy\">{{btnRollOverCopy}}</p>\n                    <p class=\"wp-landing-over-cta\">{{btnRollOverCTA}}</p>\n                </div>\n            </div>\n        </a>\n    ",
+                        directives: [analytics_directive_1.AnalyticsServiceOn]
                     }),
                     __param(0, core_1.Inject(core_1.ElementRef)), 
                     __metadata('design:paramtypes', [core_1.ElementRef])

@@ -1,4 +1,4 @@
-System.register(['angular2/core', './services/logger.service.js', './services/googleapi.service.js'], function(exports_1, context_1) {
+System.register(['angular2/core', './services/logger.service.js', './services/googleapi.service.js', './analytics.directive.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './services/logger.service.js', './services/go
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, logger_service_1, googleapi_service_1;
+    var core_1, logger_service_1, googleapi_service_1, analytics_directive_1;
     var VideoPlayerSelector;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', './services/logger.service.js', './services/go
             },
             function (googleapi_service_1_1) {
                 googleapi_service_1 = googleapi_service_1_1;
+            },
+            function (analytics_directive_1_1) {
+                analytics_directive_1 = analytics_directive_1_1;
             }],
         execute: function() {
             VideoPlayerSelector = (function () {
@@ -74,7 +77,8 @@ System.register(['angular2/core', './services/logger.service.js', './services/go
                 VideoPlayerSelector = __decorate([
                     core_1.Component({
                         selector: 'videoplayer-selector',
-                        template: "\n    \t<div (click)=\"select()\" class=\"{{selected ? 'selected' : ''}}\">\n\t\t\t<div class=\"wp-cooking-landing-videoplayer-text\">\n\t\t\t\t<div class=\"wp-cooking-landing-videoplayer-title\" [innerHtml]=\"data.ctaTitle\"></div>\n\t\t\t\t<div class=\"wp-cooking-landing-videoplayer-button\">{{data.cta}}</div>\n\t\t\t</div>\n\t\t\t<img src=\"{{data.thumb}}\" alt=\"{{data.alt}}\"/>\n\t\t</div>\n    "
+                        template: "\n    \t<div (click)=\"select()\" class=\"{{selected ? 'selected' : ''}}\" analyticsOn=\"click\" analyticsCategory=\"{{data.analytics.category}}\" analyticsAction=\"{{data.analytics.action}}\" analyticsLabel=\"{{data.analytics.label}}\">\n\t\t\t<div class=\"wp-cooking-landing-videoplayer-text\">\n\t\t\t\t<div class=\"wp-cooking-landing-videoplayer-title\" [innerHtml]=\"data.ctaTitle\"></div>\n\t\t\t\t<div class=\"wp-cooking-landing-videoplayer-button\">{{data.cta}}</div>\n\t\t\t</div>\n\t\t\t<img src=\"{{data.thumb}}\" alt=\"{{data.alt}}\"/>\n\t\t</div>\n    ",
+                        directives: [analytics_directive_1.AnalyticsServiceOn]
                     }), 
                     __metadata('design:paramtypes', [logger_service_1.LoggerService, googleapi_service_1.GoogleApiService])
                 ], VideoPlayerSelector);

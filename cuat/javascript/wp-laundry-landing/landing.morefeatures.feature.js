@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', './analytics.directive.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,12 +10,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, analytics_directive_1;
     var MoreFeaturesFeature;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (analytics_directive_1_1) {
+                analytics_directive_1 = analytics_directive_1_1;
             }],
         execute: function() {
             MoreFeaturesFeature = (function () {
@@ -45,10 +48,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Input(), 
                     __metadata('design:type', Object)
                 ], MoreFeaturesFeature.prototype, "alt", void 0);
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], MoreFeaturesFeature.prototype, "analytics", void 0);
                 MoreFeaturesFeature = __decorate([
                     core_1.Component({
                         selector: 'more-features-feature',
-                        template: "\n    \t<a *ngIf=\"!!link\" href=\"{{link}}\" target=\"_blank\"><div>\n\t\t\t<div>\n\t\t\t\t<div class=\"hover\">\n\t\t\t\t\t<div *ngIf=\"text\" class=\"text-container\">\n\t\t\t\t\t\t<div class=\"text-container-cell\">\n\t\t\t\t\t\t\t<p class=\"text\">{{text}}</p>\n\t\t\t\t\t\t\t<p class=\"cta\" *ngIf=\"cta\">{{cta}}</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img src=\"{{image}}\" alt=\"{{alt}}\"/>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<p class=\"bottom-text\" [innerHTML]=\"title\"></p>\n\t\t</div></a>\n\t\t<div *ngIf=\"!link\">\n\t\t\t<div>\n\t\t\t\t<div class=\"hover\">\n\t\t\t\t\t<div *ngIf=\"text\" class=\"text-container\">\n\t\t\t\t\t\t<div class=\"text-container-cell\">\n\t\t\t\t\t\t\t<p class=\"text\" [innerHTML]=\"text\"></p>\n\t\t\t\t\t\t\t<p class=\"cta\" *ngIf=\"cta\">{{cta}}</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img src=\"{{image}}\" alt=\"{{alt}}\"/>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<p class=\"bottom-text\" [innerHTML]=\"title\"></p>\n\t\t</div>\n    "
+                        template: "\n    \t<a *ngIf=\"!!link\" href=\"{{link}}\" target=\"_blank\" analyticsOn=\"click\" analyticsCategory=\"{{analytics.category}}\" analyticsAction=\"{{analytics.action}}\" analyticsLabel=\"{{analytics.label}}\"><div>\n\t\t\t<div>\n\t\t\t\t<div class=\"hover\">\n\t\t\t\t\t<div *ngIf=\"text\" class=\"text-container\">\n\t\t\t\t\t\t<div class=\"text-container-cell\">\n\t\t\t\t\t\t\t<p class=\"text\" [innerHTML]=\"text\"></p>\n\t\t\t\t\t\t\t<p class=\"cta\" *ngIf=\"cta\">{{cta}}</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img src=\"{{image}}\" alt=\"{{alt}}\"/>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<p class=\"bottom-text\" [innerHTML]=\"title\"></p>\n\t\t</div></a>\n\t\t<div *ngIf=\"!link\">\n\t\t\t<div>\n\t\t\t\t<div class=\"hover\" analyticsOn=\"mouseover\" analyticsCategory=\"{{analytics.category}}\" analyticsAction=\"{{analytics.action}}\" analyticsLabel=\"{{analytics.label}}\">\n\t\t\t\t\t<div *ngIf=\"text\" class=\"text-container\">\n\t\t\t\t\t\t<div class=\"text-container-cell\">\n\t\t\t\t\t\t\t<p class=\"text\" [innerHTML]=\"text\"></p>\n\t\t\t\t\t\t\t<p class=\"cta\" *ngIf=\"cta\">{{cta}}</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img src=\"{{image}}\" alt=\"{{alt}}\"/>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<p class=\"bottom-text\" [innerHTML]=\"title\"></p>\n\t\t</div>\n    ",
+                        directives: [analytics_directive_1.AnalyticsServiceOn]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MoreFeaturesFeature);

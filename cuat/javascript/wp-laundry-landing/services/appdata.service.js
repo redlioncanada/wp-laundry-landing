@@ -37,7 +37,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                             enabled: true,
                             link: 'http://www.whirlpool.ca/en_CA/everydaycare/',
                             image: '/images/wp-laundry-landing/banner.jpg',
-                            ctaText: 'Learn More'
+                            ctaText: 'Learn More',
+                            analytics: {
+                                category: "@category",
+                                action: "Clicked Bottom Banner",
+                                label: "Every Day Care-Learn More"
+                            }
                         },
                         features: {
                             enabled: true,
@@ -49,7 +54,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "What to look for when buying",
                                     cta: "Click Here",
                                     link: "http://blog.whirlpool.ca/what-to-look-for-when-buying-a-laundry-pair/",
-                                    type: "cart"
+                                    type: "cart",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Laundry Resources",
+                                        label: "Buying Guide"
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/refer-landing-star.png",
@@ -58,7 +68,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "See what others are saying",
                                     cta: "Click Here",
                                     link: "http://www.whirlpool.ca/en_CA/2_3_90/jump-pages_best-products.content.html#Laundry",
-                                    type: "star"
+                                    type: "star",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Laundry Resources",
+                                        label: "Ratings & Reviews"
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/refer-landing-mag-glass.png",
@@ -67,7 +82,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Need help finding your range?",
                                     cta: "Click Here",
                                     link: "http://findmy.whirlpool.ca",
-                                    type: "magnifier"
+                                    type: "magnifier",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Laundry Resources",
+                                        label: "Find Your WP"
+                                    }
                                 }
                             ]
                         },
@@ -81,7 +101,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     link: "/other-assets/en_CA/pdf/2016_Whirlpool_VIBRATION_FREE_LIMITED_GUARANTEE_EN.pdf",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Laundry-Additional Features",
+                                        label: "Vibration Control Guarantee"
+                                    }
                                 },
                                 {
                                     title: "Load & Go<sup>&trade;</sup> Bulk Dispenser",
@@ -89,15 +114,25 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     link: "",
                                     alt: "test",
                                     text: "Care is making things easier. Skip adding detergent to every load with the Load & Go<sup>&trade;</sup> system’s cartridge that holds enough detergent for up to 12 loads of laundry.",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Hovered Over Laundry-Additional Features",
+                                        label: "Load & Go Bulk Dispenser"
+                                    }
                                 },
                                 {
                                     title: "Additional Accessories",
                                     image: "/images/wp-laundry-landing/more-features-3.jpg",
-                                    link: "http://www.whirlpool.ca/fr_CA/Accessories-1/Accessories_Laundry_Accessories-2/102280132/",
+                                    link: "http://www.whirlpool.ca/en_CA/Accessories-1/Accessories_Laundry_Accessories-2/102280132/",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Laundry-Additional Features",
+                                        label: "Additional Accessories"
+                                    }
                                 }
                             ]
                         },
@@ -112,7 +147,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     alt: "The Most Customized Fabric Care in the Industry",
                                     ctaTitle: 'The Most Customized Fabric Care in the Industry*',
                                     cta: 'Play Video',
-                                    desc: 'Customize your fabric care using the QuickSelect<sup>&trade;</sup> System’s intuitive touch control with memory.'
+                                    desc: 'Customize your fabric care using the QuickSelect<sup>&trade;</sup> System’s intuitive touch control with memory.',
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Laundry-Must-See Innovation",
+                                        label: "Customized Fabric Care"
+                                    }
                                 },
                                 {
                                     id: 'j-q2jseqmak',
@@ -122,6 +162,11 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     ctaTitle: 'Adaptive Wash Technology',
                                     cta: 'View',
                                     desc: 'Get better clean and better care thanks to the total laundry pair system Adaptive Wash Technology. Now with Active Bloom<sup>&trade;</sup> Wash Action, this technology senses and adapts to each load for customized cleaning with the right amount of wash action and water levels.',
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Laundry-Must-See Innovation",
+                                        label: "Adaptive Wash Technology"
+                                    }
                                 },
                                 {
                                     id: 'oheY1UnexwM',
@@ -130,7 +175,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     alt: "Wash & Dry in One Cycle",
                                     ctaTitle: 'Wash & Dry in One Cycle',
                                     cta: 'View',
-                                    desc: 'Now you can wash and dry tomorrow’s outfit right in the washer with the All-In-One Care<sup>&trade;</sup> System’s Wash and Dry cycle.'
+                                    desc: 'Now you can wash and dry tomorrow’s outfit right in the washer with the All-In-One Care<sup>&trade;</sup> System’s Wash and Dry cycle.',
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Laundry-Must-See Innovation",
+                                        label: "Wash & Dry in One Cycle"
+                                    }
                                 }
                             ]
                         },
@@ -139,7 +189,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                             title: 'Choose Your Style',
                             nav: {
                                 text: 'See<br/>All',
-                                link: 'http://www.whirlpool.ca/en_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966825+4294966986+102280047+4294966878/'
+                                link: 'http://www.whirlpool.ca/en_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966825+4294966986+102280047+4294966878/',
+                                analytics: {
+                                    category: "@category",
+                                    action: "Clicked Choose Your Laundry Style",
+                                    label: "See All Laundry"
+                                }
                             },
                             products: [
                                 {
@@ -150,7 +205,13 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Looking for excellent cleaning performance, energy efficiency and sleek design? That’s just the beginning. This familiar top-load style washer has evolved tremendously in recent years, becoming the most popular laundry configuration on the market today. Advanced features and new technology give clothes a deep clean and gentle care. With the largest capacity drums available, these machines allow you to get more laundry done, faster.",
                                     link: "http://www.whirlpool.ca/en_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966825/",
                                     id: "top-load",
-                                    ctaText: "Learn More"
+                                    ctaText: "Learn More",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Choose Your Laundry Style",
+                                        label: "High-Efficiency Top Load",
+                                        learnMore: 'Learn More'
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/products/front-load.jpg",
@@ -160,7 +221,13 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Front load machines have gained popularity due to their water and energy efficiency, also offering space saving flexibility and contemporary design. This configuration boasts unique features such as Load&Go™, or combined Wash & Dry cycles, making laundry a breeze. Clothes will get the fabric care they deserve with this energy-efficient front load washer.",
                                     link: "http://www.whirlpool.ca/en_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966847+4294966878/",
                                     id: "front-load",
-                                    ctaText: "Learn More"
+                                    ctaText: "Learn More",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Choose Your Laundry Style",
+                                        label: "High-Efficiency Front Load",
+                                        learnMore: 'Learn More'
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/products/stacked.jpg",
@@ -170,7 +237,13 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Get a space-saving design with closet-depth fit that allows for more flexible installation in your laundry space.",
                                     link: "http://www.whirlpool.ca/en_CA/-[WFW9290FC]-5709597/WFW9290FC/",
                                     id: "stacked",
-                                    ctaText: "Learn More"
+                                    ctaText: "Learn More",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Choose Your Laundry Style",
+                                        label: "Small Space Solutions",
+                                        learnMore: 'Learn More'
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/products/dryer.jpg",
@@ -180,7 +253,13 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Our most efficient dryer technology allows you to enjoy exceptional care for clothes while using less energy than ever. The space-saving design and ventless technology also allow it to be installed just about anywhere.",
                                     link: "http://www.whirlpool.ca/en_CA/laundry-1/laundry-2/dryers-3/-[YWED9290FW]-5733097/YWED9290FW/",
                                     id: "dryer",
-                                    ctaText: "Learn More"
+                                    ctaText: "Learn More",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "Clicked Choose Your Laundry Style",
+                                        label: "Ventless Dryer Technology",
+                                        learnMore: 'Learn More'
+                                    }
                                 }
                             ]
                         }
@@ -196,7 +275,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                             enabled: true,
                             link: 'http://www.whirlpool.ca/fr_CA/everydaycare/',
                             image: '/images/wp-laundry-landing/banner_fr.jpg',
-                            ctaText: 'Plus de détails'
+                            ctaText: 'Plus de détails',
+                            analytics: {
+                                category: "@category",
+                                action: "FR-Clicked Bottom Banner",
+                                label: "Every Day Care-Learn More"
+                            }
                         },
                         features: {
                             enabled: true,
@@ -208,7 +292,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Caractéristiques à rechercher",
                                     cta: "Cliquez ici",
                                     link: "/other-assets/fr_CA/pdf/WP_Laundry_Buying_Guide_FR.pdf",
-                                    type: "cart"
+                                    type: "cart",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Laundry Resources",
+                                        label: "Buying Guide"
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/refer-landing-star.png",
@@ -217,7 +306,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Voyez ce que les autres clients en disent",
                                     cta: "Cliquez ici",
                                     link: "http://www.whirlpool.ca/fr_CA/2_3_90/jump-pages_best-products.content.html#Laundry",
-                                    type: "star"
+                                    type: "star",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Laundry Resources",
+                                        label: "Ratings & Reviews"
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/refer-landing-mag-glass.png",
@@ -226,7 +320,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Vous avez besoin d'aide pour trouver votre duo de lessive?",
                                     cta: "Cliquez ici",
                                     link: "http://trouvermon.whirlpool.ca",
-                                    type: "magnifier"
+                                    type: "magnifier",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Laundry Resources",
+                                        label: "Find Your WP"
+                                    }
                                 }
                             ]
                         },
@@ -240,7 +339,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     link: "http://www.whirlpool.ca/other-assets/en_CA/pdf/2016_Whirlpool_VIBRATION_FREE_LIMITED_GUARANTEE_FR.pdf",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Laundry-Additional Features",
+                                        label: "Vibration Control Guarantee"
+                                    }
                                 },
                                 {
                                     title: "Distributeur de détergent Load & Go<sup>&trade;</sup>",
@@ -248,7 +352,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     link: "",
                                     alt: "test",
                                     text: "Plus besoin d'ajouter du détergent à chaque brassée grâce au système de remplissage Load & Go<sup>&trade;</sup> . La cartouche Load & Go<sup>&trade;</sup> peut contenir suffisamment de détergent pour laver jusqu'à 12 brassées* de vêtements.",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Hovered Over Laundry-Additional Features",
+                                        label: "Load & Go Bulk Dispenser"
+                                    }
                                 },
                                 {
                                     title: "Accessoires Additionnels",
@@ -256,7 +365,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     link: "http://www.whirlpool.ca/fr_CA/Accessories-1/Accessories_Laundry_Accessories-2/102280132/",
                                     alt: "test",
                                     text: "",
-                                    cta: ""
+                                    cta: "",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Laundry-Additional Features",
+                                        label: "Additional Accessories"
+                                    }
                                 }
                             ]
                         },
@@ -271,7 +385,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     alt: "Le soin des tissus le plus personnalisé de l\'industrie*",
                                     ctaTitle: 'Le soin des tissus le plus personnalisé de l\'industrie*',
                                     cta: 'Voir',
-                                    desc: 'Personnalisez le soin de vos tissus avec le système de commandes intuitives à effleurement avec mémoire QuickSelect<sup>&trade;</sup>.'
+                                    desc: 'Personnalisez le soin de vos tissus avec le système de commandes intuitives à effleurement avec mémoire QuickSelect<sup>&trade;</sup>.',
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Laundry-Must-See Innovation",
+                                        label: "Customized Fabric Care"
+                                    }
                                 },
                                 {
                                     image: '/images/wp-laundry-landing/video-thumb-2.jpg',
@@ -281,6 +400,11 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     ctaTitle: 'Technologie de lavage adaptatif',
                                     cta: 'Voir',
                                     desc: 'Obtenez un meilleur nettoyage et un meilleur soin des vêtements grâce à la technologie de lavage adaptatif, qui est partie intégrante du système d\'entretien complet des vêtements. Maintenant dotée de l\'action de lavage Active Bloom<sup>&trade;</sup>; cette technologie évalue chaque brassée et adapte les mouvements de lavage et les niveaux d\'eau en conséquence, procurant un nettoyage personnalisé.',
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Laundry-Must-See Innovation",
+                                        label: "Adaptive Wash Technology"
+                                    }
                                 },
                                 {
                                     image: '/images/wp-laundry-landing/video-thumb-3.jpg',
@@ -289,7 +413,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     alt: "Lavage et séchage en un seul programme",
                                     ctaTitle: 'Lavage et séchage en un seul programme',
                                     cta: 'Voir',
-                                    desc: 'Maintenant vous pouvez laver et sécher votre tenue du lendemain directement dans la laveuse grâce au programme de lavage et de séchage All-In-One Care<sup>&trade;</sup>.'
+                                    desc: 'Maintenant vous pouvez laver et sécher votre tenue du lendemain directement dans la laveuse grâce au programme de lavage et de séchage All-In-One Care<sup>&trade;</sup>.',
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Laundry-Must-See Innovation",
+                                        label: "Wash & Dry in One Cycle"
+                                    }
                                 }
                             ]
                         },
@@ -298,7 +427,12 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                             title: 'Choisissez votre style',
                             nav: {
                                 text: 'Tout<br/>Voir',
-                                link: 'http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966847+102280319+102280316+102280317/'
+                                link: 'http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966847+102280319+102280316+102280317/',
+                                analytics: {
+                                    category: "@category",
+                                    action: "FR-Clicked Choose Your Laundry Style",
+                                    label: "See All Laundry"
+                                }
                             },
                             products: [
                                 {
@@ -309,7 +443,13 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Vous recherchez un nettoyage optimal, une bonne efficacité énergétique et une élégance épurée? Ce n'est que le début. Ce style de laveuse traditionnel à chargement vertical a considérablement évolué au cours des dernières années, pour en faire la configuration de lessive la plus populaire sur le marché d'aujourd'hui. Des fonctions perfectionnées et une nouvelle technologie procurent aux vêtements un nettoyage en profondeur et un soin délicat. Grâce à des paniers et tambours à la plus grande capacité, ces appareils vous permettent d'effectuer davantage de lessive, plus rapidement.",
                                     link: "http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+102280317/",
                                     id: "top-load",
-                                    ctaText: "Plus de détails"
+                                    ctaText: "Plus de détails",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Choose Your Laundry Style",
+                                        label: "High-Efficiency Top Load",
+                                        learnMore: 'Learn More'
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/products/front-load.jpg",
@@ -319,7 +459,13 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Les appareils de lessive à chargement frontal ont gagné en popularité en raison de leur efficacité éconergétique, et de leur polyvalence d'installation et style contemporain. La cartouche Load&Go™, ou le programme de lavage et séchage combinés de cette configuration facilitent la lessive.  Les vêtements reçoivent le soin qu'ils méritent grâce à cette laveuse à chargement frontal à haute efficacité.",
                                     link: "http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+102280316/",
                                     id: "front-load",
-                                    ctaText: "Plus de détails"
+                                    ctaText: "Plus de détails",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Choose Your Laundry Style",
+                                        label: "High-Efficiency Front Load",
+                                        learnMore: 'Learn More'
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/products/stacked.jpg",
@@ -329,7 +475,13 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Bénéficiez d'une conception qui économise de l'espace et s'ajuste à la profondeur de placard pour une installation polyvalente dans votre espace de lessive.",
                                     link: "http://www.whirlpool.ca/fr_CA/-[WFW9290FC]-5709597/WFW9290FC/",
                                     id: "stacked",
-                                    ctaText: "Plus de détails"
+                                    ctaText: "Plus de détails",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Choose Your Laundry Style",
+                                        label: "Small Space Solutions",
+                                        learnMore: 'Learn More'
+                                    }
                                 },
                                 {
                                     image: "/images/wp-laundry-landing/products/dryer.jpg",
@@ -339,7 +491,13 @@ System.register(['angular2/core', './logger.service.js'], function(exports_1, co
                                     desc: "Notre sécheuse à technologie la plus efficace vous permet de profiter d'un soin exceptionnel de vos vêtements tout en consommant moins d'énergie. La conception compacte et sans évent permet d’installer ce modèle pratiquement partout.",
                                     link: "http://www.whirlpool.ca/fr_CA/-[YWED9290FW]-5733097/YWED9290FW/",
                                     id: "dryer",
-                                    ctaText: "Plus de détails"
+                                    ctaText: "Plus de détails",
+                                    analytics: {
+                                        category: "@category",
+                                        action: "FR-Clicked Choose Your Laundry Style",
+                                        label: "Ventless Dryer Technology",
+                                        learnMore: 'Learn More'
+                                    }
                                 }
                             ]
                         }

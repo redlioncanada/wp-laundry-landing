@@ -63,6 +63,10 @@ more-features-feature {
 	  background-color: $moreFeaturesBackgroundColor;
 	}
 
+	.text-container * {
+		pointer-events: none;
+	}
+
 	.text-container-cell {
 	  max-width: 50%;
 

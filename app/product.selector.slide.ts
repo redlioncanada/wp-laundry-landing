@@ -13,7 +13,7 @@ import {LearnMoreButton} from './landing.learn-more.button'
            <div class="rl-wp-lndng-prodRight">
            <div class="rl-wp-lndng-fridge-title mobile" [innerHTML]="fridgeTitle"></div>
             <div class="rl-wp-lndng-fridge-title" [innerHTML]="fridgeTitle"></div>
-            <div class="rl-wp-lndng-fridge-desc" [innerHTML]="fridgeDescription"></div>
+            <div class="rl-wp-lndng-fridge-desc">{{fridgeDescription}}</div>
             <learn-more-button [analytics]="analytics" [link]="fridgeUrl" [text]="ctaText"></learn-more-button>
             </div>
           </div>
@@ -30,4 +30,5 @@ export class ProductSlide {
     @Input() selected
     @Input() ctaText
     @Input() fridgeAlt
+    @Input() analytics
 }

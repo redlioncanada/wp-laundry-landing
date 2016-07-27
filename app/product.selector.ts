@@ -11,14 +11,15 @@ import {ProductModel} from './models/products.model'
             <div>
                 <h2 class="title">{{title}}</h2>
             </div>
-            <product-slides [products]="products" [selectedProduct]="selectedProduct" (isAnimating)="isAnimating($event)"></product-slides>
-            <product-selector-nav [products]="products" [selectedProduct]="selectedProduct" (productSelected)="productSelected($event)"></product-selector-nav>
+            <product-slides [products]="slidesProducts" [selectedProduct]="selectedProduct" (isAnimating)="isAnimating($event)"></product-slides>
+            <product-selector-nav [products]="selectorProducts" [selectedProduct]="selectedProduct" (productSelected)="productSelected($event)"></product-selector-nav>
         </div>
     `,
     directives: [ProductSlides, ProductSelectorNav],
 })
 export class ProductSelector {
-    public products: Array<ProductModel>;
+    public selectorProducts: Array<ProductModel>
+    public slidesProducts: Array<ProductModel>
     public selectedProduct: ProductModel;
     public animating: Boolean;
     private title: string;
@@ -30,10 +31,12 @@ export class ProductSelector {
 
         this.enabled = data.productselector.enabled
         this.title = data.productselector.title
-		this.products = new Array<ProductModel>()
+        this.selectorProducts = new Array<ProductModel>()
+        this.slidesProducts = new Array<ProductModel>()
         for (var i in data.productselector.products) {
             var product = data.productselector.products[i]
-            this.products.push(
+
+            this.selectorProducts.push(
                 new ProductModel(
                     product.image,
                     product.thumb,
@@ -42,31 +45,50 @@ export class ProductSelector {
                     product.link,
                     product.id,
                     product.ctaText,
-                    product.alt
+                    product.alt,
+                    product.analytics
+                )
+            )
+
+            this.slidesProducts.push(
+                new ProductModel(
+                    product.image,
+                    product.thumb,
+                    product.title,
+                    product.desc,
+                    product.link,
+                    product.id,
+                    product.ctaText,
+                    product.alt,
+                    {
+                        category: product.analytics.category,
+                        action: product.analytics.action,
+                        label: product.analytics.label + ' ' + product.analytics.learnMore
+                    }
                 )
             )
         }
 
-		this.selectedProduct = this.products[0];
-		this.animating = false;
+        this.selectedProduct = this.slidesProducts[0];
+        this.animating = false;
     }
 
     ngOnChanges(changes) {
-    	if ("selectedProduct" in changes) {
-    		console.log('product selector changed product: ',changes.selectedProduct.currentValue)
-    	}
+        if ("selectedProduct" in changes) {
+            console.log('product selector changed product: ',changes.selectedProduct.currentValue)
+        }
     }
 
     //@Output on product.selector.nav
     productSelected(product) {
-		if (!this.animating) {
-			this.selectedProduct = product;
-			console.log('product.selector got new product: ' + product.prodId)
-		}
+        if (!this.animating) {
+            this.selectedProduct = product;
+            console.log('product.selector got new product: ' + product.prodId)
+        }
     }
 
     //@Output on product.selector.slides
     isAnimating(animating) {
-		this.animating = animating;
+        this.animating = animating;
     }
 }

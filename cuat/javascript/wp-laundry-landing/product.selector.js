@@ -37,12 +37,18 @@ System.register(['angular2/core', './product.selector.slides.js', './product.sel
                     var data = appdata.get();
                     this.enabled = data.productselector.enabled;
                     this.title = data.productselector.title;
-                    this.products = new Array();
+                    this.selectorProducts = new Array();
+                    this.slidesProducts = new Array();
                     for (var i in data.productselector.products) {
                         var product = data.productselector.products[i];
-                        this.products.push(new products_model_1.ProductModel(product.image, product.thumb, product.title, product.desc, product.link, product.id, product.ctaText, product.alt));
+                        this.selectorProducts.push(new products_model_1.ProductModel(product.image, product.thumb, product.title, product.desc, product.link, product.id, product.ctaText, product.alt, product.analytics));
+                        this.slidesProducts.push(new products_model_1.ProductModel(product.image, product.thumb, product.title, product.desc, product.link, product.id, product.ctaText, product.alt, {
+                            category: product.analytics.category,
+                            action: product.analytics.action,
+                            label: product.analytics.label + ' ' + product.analytics.learnMore
+                        }));
                     }
-                    this.selectedProduct = this.products[0];
+                    this.selectedProduct = this.slidesProducts[0];
                     this.animating = false;
                 }
                 ProductSelector.prototype.ngOnChanges = function (changes) {
@@ -64,7 +70,7 @@ System.register(['angular2/core', './product.selector.slides.js', './product.sel
                 ProductSelector = __decorate([
                     core_1.Component({
                         selector: 'product-selector',
-                        template: "\n        <div class=\"row\" class=\"{{!enabled ? 'hide' : ''}}\">\n            <div>\n                <h2 class=\"title\">{{title}}</h2>\n            </div>\n            <product-slides [products]=\"products\" [selectedProduct]=\"selectedProduct\" (isAnimating)=\"isAnimating($event)\"></product-slides>\n            <product-selector-nav [products]=\"products\" [selectedProduct]=\"selectedProduct\" (productSelected)=\"productSelected($event)\"></product-selector-nav>\n        </div>\n    ",
+                        template: "\n        <div class=\"row\" class=\"{{!enabled ? 'hide' : ''}}\">\n            <div>\n                <h2 class=\"title\">{{title}}</h2>\n            </div>\n            <product-slides [products]=\"slidesProducts\" [selectedProduct]=\"selectedProduct\" (isAnimating)=\"isAnimating($event)\"></product-slides>\n            <product-selector-nav [products]=\"selectorProducts\" [selectedProduct]=\"selectedProduct\" (productSelected)=\"productSelected($event)\"></product-selector-nav>\n        </div>\n    ",
                         directives: [product_selector_slides_1.ProductSlides, product_selector_nav_1.ProductSelectorNav],
                     }), 
                     __metadata('design:paramtypes', [appdata_service_1.AppDataService])

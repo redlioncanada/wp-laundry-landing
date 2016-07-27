@@ -36,13 +36,13 @@ System.register(['angular2/core', './landing.feature.button.js', './models/featu
                     this.enabled = data.features.enabled;
                     for (var i in data.features.features) {
                         var feature = data.features.features[i];
-                        this.featureButtons.push(new features_model_1.FeatureModel(feature.image, feature.title, feature.desc, feature.cta, feature.link, feature.type, feature.alt));
+                        this.featureButtons.push(new features_model_1.FeatureModel(feature.image, feature.title, feature.desc, feature.cta, feature.link, feature.type, feature.alt, feature.analytics));
                     }
                 }
                 Features = __decorate([
                     core_1.Component({
                         selector: 'features',
-                        template: "\n        <div class=\"row {{!enabled ? 'hide': ''}}\">\n            <feature-button *ngFor=\"#feature of featureButtons; #i=index\" [timeline]=\"feature.timeline\" [btnIcon]= \"feature.btnIcon\" [btnTitle]= \"feature.btnTitle\" [btnRollOverCopy]=\"feature.btnRollOverCopy\" [btnRollOverCTA]=\"feature.btnRollOverCTA\" [btnAlt]=\"feature.btnAlt\" [btnType]=\"feature.btnType\" [btnLink]=\"feature.btnLink\">\n\n            </feature-button>\n        </div>\n    ",
+                        template: "\n        <div class=\"row {{!enabled ? 'hide': ''}}\">\n            <feature-button *ngFor=\"#feature of featureButtons; #i=index\" [timeline]=\"feature.timeline\" [analytics]=\"feature.analytics\" [btnIcon]= \"feature.btnIcon\" [btnTitle]= \"feature.btnTitle\" [btnRollOverCopy]=\"feature.btnRollOverCopy\" [btnRollOverCTA]=\"feature.btnRollOverCTA\" [btnAlt]=\"feature.btnAlt\" [btnType]=\"feature.btnType\" [btnLink]=\"feature.btnLink\">\n\n            </feature-button>\n        </div>\n    ",
                         directives: [landing_feature_button_1.FeatureButton],
                     }), 
                     __metadata('design:paramtypes', [appdata_service_1.AppDataService])

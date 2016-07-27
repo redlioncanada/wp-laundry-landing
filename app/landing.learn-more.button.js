@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', './analytics.directive'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,12 +10,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, analytics_directive_1;
     var LearnMoreButton;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (analytics_directive_1_1) {
+                analytics_directive_1 = analytics_directive_1_1;
             }],
         execute: function() {
             LearnMoreButton = (function () {
@@ -29,10 +32,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Input(), 
                     __metadata('design:type', Object)
                 ], LearnMoreButton.prototype, "text", void 0);
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], LearnMoreButton.prototype, "analytics", void 0);
                 LearnMoreButton = __decorate([
                     core_1.Component({
                         selector: 'learn-more-button',
-                        template: "\n    \t<a href=\"{{link}}\" target=\"_blank\"><div class=\"learn-more-button {{arrow ? 'learn-more-arrow': ''}}\">\n\t\t\t<p>{{text}} &gt;</p>\n\t\t</div></a>\n    "
+                        template: "\n    \t<a href=\"{{link}}\" analyticsOn=\"click\" analyticsCategory=\"{{analytics.category}}\" analyticsAction=\"{{analytics.action}}\" analyticsLabel=\"{{analytics.label}}\" target=\"_blank\"><div class=\"learn-more-button {{arrow ? 'learn-more-arrow': ''}}\">\n\t\t\t<p>{{text}} &gt;</p>\n\t\t</div></a>\n    ",
+                        directives: [analytics_directive_1.AnalyticsServiceOn]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], LearnMoreButton);

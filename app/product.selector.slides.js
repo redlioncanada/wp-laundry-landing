@@ -62,7 +62,7 @@ System.register(['angular2/core', './product.selector.slide', './services/logger
                 ProductSlides.prototype.ngAfterViewInit = function () {
                     this.rootElement = $(this.elementRef.nativeElement);
                     var target = this.selectedProduct.prodId;
-                    this.playIn(this, true, target);
+                    // this.playIn(this, true, target)
                 };
                 ProductSlides.prototype.ngOnChanges = function (changes) {
                     var self = this;
@@ -100,10 +100,11 @@ System.register(['angular2/core', './product.selector.slide', './services/logger
                     $(self.rootElement).find('product-slide').css('zIndex', 1);
                     $(target).parent().css('zIndex', 2);
                     $('product-slides').css('height', $('.selected').css('height'));
-                    if (self.init)
+                    if (self.init) {
                         $('html,body').animate({
                             scrollTop: $('product-slides').offset().top
                         });
+                    }
                     var image = ($(target).find('.rl-wp-lndng-fridge'));
                     var title = ($(target).find('.rl-wp-lndng-fridge-title'));
                     var desc = ($(target).find('.rl-wp-lndng-fridge-desc'));

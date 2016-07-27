@@ -6,7 +6,7 @@ System.register([], function(exports_1, context_1) {
         setters:[],
         execute: function() {
             FeatureModel = (function () {
-                function FeatureModel(btnIcon, btnTitle, btnRollOverCopy, btnRollOverCTA, btnLink, btnType, btnAlt) {
+                function FeatureModel(btnIcon, btnTitle, btnRollOverCopy, btnRollOverCTA, btnLink, btnType, btnAlt, analytics) {
                     if (btnIcon === void 0) { btnIcon = ""; }
                     if (btnTitle === void 0) { btnTitle = ""; }
                     if (btnRollOverCopy === void 0) { btnRollOverCopy = ""; }
@@ -14,6 +14,7 @@ System.register([], function(exports_1, context_1) {
                     if (btnLink === void 0) { btnLink = ""; }
                     if (btnType === void 0) { btnType = ""; }
                     if (btnAlt === void 0) { btnAlt = ""; }
+                    if (analytics === void 0) { analytics = {}; }
                     this.btnIcon = btnIcon;
                     this.btnTitle = btnTitle;
                     this.btnRollOverCopy = btnRollOverCopy;
@@ -21,6 +22,7 @@ System.register([], function(exports_1, context_1) {
                     this.btnLink = btnLink;
                     this.btnType = btnType;
                     this.btnAlt = btnAlt;
+                    this.analytics = analytics;
                 }
                 return FeatureModel;
             }());

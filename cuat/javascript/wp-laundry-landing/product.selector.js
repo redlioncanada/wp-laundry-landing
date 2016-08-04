@@ -1,4 +1,4 @@
-System.register(['angular2/core', './product.selector.slides', './product.selector.nav', './services/appdata.service', './models/products.model'], function(exports_1, context_1) {
+System.register(['angular2/core', './product.selector.slides.js', './product.selector.nav.js', './services/appdata.service.js', './models/products.model.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

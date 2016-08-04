@@ -7,6 +7,7 @@ export class ProductModel{
                 public prodUrl:string = "",
                 public prodId:string = "",
                 public ctaText:string = "",
-                public prodAlt: string = ""
+                public prodAlt: string = "",
+                public analytics:Object = {}
                 ){}
 }

@@ -1,4 +1,4 @@
-System.register(['angular2/platform/browser', 'angular2/http', './services/logger.service', './services/googleapi.service', './services/analytics.service', './services/breakpoint.service', './services/appdata.service', './services/environment.service', 'angular2/core', './landing.video-player', './landing.masthead', './landing.feature', './product.selector', './landing.morefeatures', './landing.banner', './landing.header', './landing.footer'], function(exports_1, context_1) {
+System.register(['angular2/platform/browser', 'angular2/http', './services/logger.service.js', './services/googleapi.service.js', './services/analytics.service.js', './services/breakpoint.service.js', './services/appdata.service.js', './services/environment.service.js', 'angular2/core', './landing.video-player.js', './landing.masthead.js', './landing.feature.js', './product.selector.js', './landing.morefeatures.js', './landing.banner.js', './landing.header.js', './landing.footer.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

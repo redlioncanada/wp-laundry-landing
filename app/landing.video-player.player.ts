@@ -10,7 +10,7 @@ declare var $: JQueryStatic
     	<div (window:resize)="onResize($event,this)">
 			<ul>
 				<li *ngFor="#video of data; #i=index" class="{{currentId !== i ? 'hide' : 'show'}}">
-					<videoplayer-video [image]="video.image" [id]="video.id" [selected]="currentId == i" [width]="video.width" [height]="video.height"></videoplayer-video>
+					<videoplayer-video [image]="video.image" [id]="video.id" [selected]="currentId == i" [width]="video.width" [height]="video.height" [alt]="video.thumbAlt"></videoplayer-video>
 				</li>
 			</ul>
 		    <div class="wp-cooking-landing-videoplayer-text">

@@ -61,7 +61,7 @@ export class ProductSlides {
   private ngAfterViewInit() {
     this.rootElement = $(this.elementRef.nativeElement)
     var target = this.selectedProduct.prodId
-    this.playIn(this, true, target)
+    // this.playIn(this, true, target)
   }
 
   private ngOnChanges(changes) {
@@ -105,9 +105,11 @@ export class ProductSlides {
     $(target).parent().css('zIndex', 2)
     $('product-slides').css('height', $('.selected').css('height'));
 
-    if (self.init) $('html,body').animate({
-      scrollTop: $('product-slides').offset().top
-    })
+    if (self.init) {
+      $('html,body').animate({
+        scrollTop: $('product-slides').offset().top
+      })
+    }
 
     var image = ($(target).find('.rl-wp-lndng-fridge'))
     var title = ($(target).find('.rl-wp-lndng-fridge-title'))

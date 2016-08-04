@@ -1,14 +1,14 @@
 import {bootstrap}    from 'angular2/platform/browser'
 import {Component, Input, Inject, ElementRef} from 'angular2/core'
+import {AnalyticsServiceOn} from './analytics.directive'
 
 declare var $: JQueryStatic;
 
 @Component({
     selector: 'feature-button',
     template: `
-        <a href="{{btnLink}}">
+        <a href="{{btnLink}}" analyticsOn="click" analyticsCategory="{{analytics.category}}" analyticsAction="{{analytics.action}}" analyticsLabel="{{analytics.label}}">
             <div class="wp-landing-feature-button" >
-                <!-- I don't know.  I just like spacing my code with comments -->
                 <div class="wp-landing-feature-button-up">
                     <div class="wp-landing-feature-icon wp-landing-innerBtn"><img class="{{btnType}}" src={{btnIcon}} alt="{{btnAlt}}" /></div>
                     <div class="wp-landing-feature-title wp-landing-innerBtn">{{btnTitle}}</div>
@@ -18,7 +18,8 @@ declare var $: JQueryStatic;
                 </div>
             </div>
         </a>
-    `
+    `,
+    directives: [AnalyticsServiceOn]
 })
 
 export class FeatureButton {
@@ -29,6 +30,7 @@ export class FeatureButton {
     @Input() btnLink
     @Input() btnType
     @Input() btnAlt
+    @Input() analytics
 
     private rootElement;
     private elementRef: ElementRef;

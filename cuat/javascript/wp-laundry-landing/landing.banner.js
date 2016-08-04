@@ -1,4 +1,4 @@
-System.register(['angular2/core', './landing.learn-more.button', './services/appdata.service', './services/logger.service'], function(exports_1, context_1) {
+System.register(['angular2/core', './landing.learn-more.button.js', './services/appdata.service.js', './services/logger.service.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

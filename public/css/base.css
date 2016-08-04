@@ -1199,6 +1199,8 @@ rl-wp-laundry-landing {
       -o-transition: all 0.2s ease;
       transition: all 0.2s ease;
       background-color: #eab018; }
+    rl-wp-laundry-landing more-features-feature .text-container * {
+      pointer-events: none; }
     rl-wp-laundry-landing more-features-feature .text-container-cell {
       max-width: 50%; }
       rl-wp-laundry-landing more-features-feature .text-container-cell .cta {

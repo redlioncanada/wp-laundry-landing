@@ -77,7 +77,7 @@ System.register(['angular2/platform/browser', 'angular2/http', './services/logge
                         return window.location.href.indexOf('fr_CA/') > -1 ? 'FR' : 'EN';
                     });
                     analytics.bind('category', function (str) {
-                        return 'Cooking LP';
+                        return 'Laundry LP';
                     });
                     breakpoint.add('mobile', 480);
                     breakpoint.add('tablet', 481);

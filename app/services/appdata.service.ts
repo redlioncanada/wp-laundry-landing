@@ -264,7 +264,7 @@ export class AppDataService {
 				image: './public/images/banner_fr.jpg',
 				ctaText: 'Plus de détails',
 				analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Bottom Banner",
 							label: "Every Day Care-Learn More"
 						}
@@ -281,7 +281,7 @@ export class AppDataService {
 						link: "/other-assets/fr_CA/pdf/WP_Laundry_Buying_Guide_FR.pdf",
 						type: "cart",
 						analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Laundry Resources",
 							label: "Buying Guide"
 						}
@@ -295,7 +295,7 @@ export class AppDataService {
 						link: "http://www.whirlpool.ca/fr_CA/2_3_90/jump-pages_best-products.content.html#Laundry",
 						type: "star",
 						analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Laundry Resources",
 							label: "Ratings & Reviews"
 						}
@@ -309,7 +309,7 @@ export class AppDataService {
 						link: "http://trouvermon.whirlpool.ca",
 						type: "magnifier",
 						analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Laundry Resources",
 							label: "Find Your WP"
 						}
@@ -328,7 +328,7 @@ export class AppDataService {
 						text: "",
 						cta: "",
 						analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Laundry-Additional Features",
 							label: "Vibration Control Guarantee"
 						}
@@ -341,7 +341,7 @@ export class AppDataService {
 						text: "Plus besoin d'ajouter du détergent à chaque brassée grâce au système de remplissage Load & Go<sup>&trade;</sup> . La cartouche Load & Go<sup>&trade;</sup> peut contenir suffisamment de détergent pour laver jusqu'à 12 brassées* de vêtements.",
 						cta: "",
 						analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Hovered Over Laundry-Additional Features",
 							label: "Load & Go Bulk Dispenser"
 						}
@@ -354,7 +354,7 @@ export class AppDataService {
 						text: "",
 						cta: "",
 						analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Laundry-Additional Features",
 							label: "Additional Accessories"
 						}
@@ -374,7 +374,7 @@ export class AppDataService {
 						cta: 'Voir',
 						desc: 'Personnalisez le soin de vos tissus avec le système de commandes intuitives à effleurement avec mémoire QuickSelect<sup>&trade;</sup>.',
 						analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Laundry-Must-See Innovation",
 							label: "Customized Fabric Care"
 						}
@@ -388,7 +388,7 @@ export class AppDataService {
 						cta: 'Voir',
 						desc: 'Obtenez un meilleur nettoyage et un meilleur soin des vêtements grâce à la technologie de lavage adaptatif, qui est partie intégrante du système d\'entretien complet des vêtements. Maintenant dotée de l\'action de lavage Active Bloom<sup>&trade;</sup>; cette technologie évalue chaque brassée et adapte les mouvements de lavage et les niveaux d\'eau en conséquence, procurant un nettoyage personnalisé.',
 						analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Laundry-Must-See Innovation",
 							label: "Adaptive Wash Technology"
 						}
@@ -402,7 +402,7 @@ export class AppDataService {
 						cta: 'Voir',
 						desc: 'Maintenant vous pouvez laver et sécher votre tenue du lendemain directement dans la laveuse grâce au programme de lavage et de séchage All-In-One Care<sup>&trade;</sup>.',
 						analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Laundry-Must-See Innovation",
 							label: "Wash & Dry in One Cycle"
 						}
@@ -416,7 +416,7 @@ export class AppDataService {
 					text: 'Tout<br/>Voir',
 					link: 'http://www.whirlpool.ca/fr_CA/Laundry-1/Laundry_Laundry_Washers-3/102280047+4294966847+102280319+102280316+102280317/',
 					analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Choose Your Laundry Style",
 							label: "See All Laundry"
 						}
@@ -432,7 +432,7 @@ export class AppDataService {
                         id: "top-load",
                         ctaText: "Plus de détails",
                         analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Choose Your Laundry Style",
 							label: "High-Efficiency Top Load",
 							learnMore: 'Learn More'
@@ -448,7 +448,7 @@ export class AppDataService {
                         id: "front-load",
                         ctaText: "Plus de détails",
                         analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Choose Your Laundry Style",
 							label: "High-Efficiency Front Load",
 							learnMore: 'Learn More'
@@ -464,7 +464,7 @@ export class AppDataService {
                         id: "stacked",
                         ctaText: "Plus de détails",
                         analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Choose Your Laundry Style",
 							label: "Small Space Solutions",
 							learnMore: 'Learn More'
@@ -480,7 +480,7 @@ export class AppDataService {
                         id: "dryer",
                         ctaText: "Plus de détails",
                         analytics: {
-							category: "@category",
+							category: "@language-@category",
 							action: "FR-Clicked Choose Your Laundry Style",
 							label: "Ventless Dryer Technology",
 							learnMore: 'Learn More'
